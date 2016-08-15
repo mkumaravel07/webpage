@@ -1,0 +1,144 @@
+<html>
+<head>
+        <title>Login Page</title>
+        	<style>
+        	html, body 
+		{
+            		width: 100%;
+            		height: 100%;
+            		font-family: "Helvetica Neue", Helvetica, sans-serif;
+            		color: #444;
+            		-webkit-font-smoothing: antialiased;
+            		background: #FEFFE3;
+        	}
+        	#container 
+		{
+            		position: fixed;
+            		width: 340px;
+            		height: 285.5px;
+            		top: 50%;
+            		left: 50%;
+            		margin-top: -140px;
+            		margin-left: -170px;
+            		background: #ECFFE3;
+            		border-radius: 3px;
+            		border: 1px solid #ccc;
+            		box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+		}
+        	form 
+		{
+            		margin: 0 auto;
+            		margin-top: 20px;
+        	}
+        	label 
+		{
+            		color: #555;
+            		margin-left: 18px;
+            		padding-top: 10px;
+            		font-size: 14px;
+        	}
+		input 
+		{
+            		font-family: "Helvetica Neue", Helvetica, sans-serif;
+            		font-size: 12px;
+            		outline: none;
+        	}
+        	input[type=text],input[type=password] ,input[type=time], input[type=email]
+		{
+            		color: #777;
+            		padding-left: 10px;
+            		margin: 10px;
+            		margin-top: 12px;
+            		margin-left: 18px;
+            		width: 290px;
+            		height: 35px;
+            		border: 1px solid #c7d0d2;
+           		border-radius: 3px;
+            		box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+            	}
+        	#lower 
+		{
+            		background: #FFE3E3;
+            		width: 100%;
+            		height: 55px;
+            		margin-top: 20px;
+              		box-shadow: inset 0 1px 1px #fff;
+            		border-top: 1px solid #ccc;
+            		border-bottom-right-radius: 3px;
+            		border-bottom-left-radius: 3px;
+        	}
+        	#lower1 
+		{
+            		background: #F2D7FF;
+            		width: 100%;
+            		height: 40px;
+            		margin-top: 0px;
+              		box-shadow: inset 0 1px 1px #fff;
+            		border-top: 1px solid #ccc;
+            		border-bottom-right-radius: 3px;
+            		border-bottom-left-radius: 3px;
+        	}
+        	input[type=checkbox] 
+		{
+            		margin-left: 20px;
+            		margin-top: 20px;
+        	}
+        	.check 
+		{
+            		margin-left: 5px;
+            		font-size: 11px;
+            		color: #444;
+            		text-shadow: 0 1px 0 #fff;
+        	}
+        	input[type=submit] 
+		{
+            		float: right;
+            		margin-right: 20px;
+            		margin-top: 15px;
+           		width: 80px;
+            		height: 30px;
+            		font-size: 14px;
+            		font-weight: bold;
+            		color: #fff;
+            		background-color: #00DAC6;
+            		border-radius: 30px;
+            		border: 1px solid #66add6;
+            		box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+
+        	}
+        	input.my[type=submit] 
+		{
+            		float: right;
+            		margin-right: 20px;
+            		margin-top: -35px;
+            		width: 75px;
+            		height: 25px;
+            		font-size: 14px;
+            		font-weight: bold;
+            		color: #fff;
+            		background-color: #FABAFF;	
+			border-radius: 30px;
+        	}
+        	</style>
+        </head>
+        <body>
+		<div id="container">
+			<form action="login_process.php" method="post">
+                    		<label>Username:</label>
+                    			<input type="email" id="username" name="email" required placeholder="Username or E-mail" >
+                    		<label>Password:</label>
+                    			<input type="password" id="password" name="password"  required placeholder="Password">
+                    		<div id="lower">
+                        		<input type="checkbox"><label class="check" for="checkbox">Keep me logged in</label>
+                        		<input type="submit" value="Login">
+                    		</div>	
+			</form>
+			<div id="lower1">                			    			
+				<form action="demo_form.asp">		
+					<p style="font-size:60%;">&emsp;&emsp;Not registered sign up ?</p>
+						<input class="my" type="submit" formaction="registration.html" value="Sign up">
+				</form>	
+			</div>
+            	</div>
+        </body>
+</html>
